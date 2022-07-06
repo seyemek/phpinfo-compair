@@ -1,11 +1,5 @@
 <?php
 $uniq = uniqid();
-/**
-$db = new mysqli("127.0.0.1", "root", "qweasd");
-$sql = 'SELECT  VERSION() as mysqlver;';
-$result = $db->query($sql);
-$mysqlver = (string)$result->fetch_object()->mysqlver;
-/**/
 $ext = get_loaded_extensions();
 sort($ext);
 $mod = apache_get_modules();
@@ -26,6 +20,5 @@ $arr = [
 			],
 		'ini'=> $ini,
 		];
-//print_r($arr);
 echo json_encode($arr);
 ?>
