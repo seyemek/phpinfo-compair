@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>phpinfo() comparison</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/lib/style/css/w3.css" />
+		<link rel="stylesheet" href="/lib/style/css/w3comparison.css" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div class="comparison">
+			<!-- BEGIN list -->
+			<table>
+				<tr><th colspan="{list.colspan-}"><span>{list.header}</span></th>
+					<!-- BEGIN head -->
+						<th colspan="{list.colspan-}">{list.head.IP}</th>
+					<!-- END head -->
+				</tr>
+				<!-- BEGIN lst -->
+				<tr><td ><span>{list.lst.first_td}</span></td>
+					<!-- BEGIN lt -->
+					<td style="width:{list.lst.lt.w}%">
+						<div class="all">
+						<!-- BEGIN l -->
+							<div>{list.lst.lt.l.item}</div>
+						<!-- END l -->
+						</div>
+					</td>
+					<!-- END lt -->
+				</tr>
+				<!-- END lst -->
+			</table>
+			<!-- END list -->
+		</div>
+	</body>
+</html>
