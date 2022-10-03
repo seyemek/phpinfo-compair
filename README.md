@@ -1,5 +1,4 @@
-# phpinfo-compair
-
+# phpinfo-compair compare 
 I wrote it in 2020 out of necessity.
 
 Both scripts require the curl extension.
