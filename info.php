@@ -1,6 +1,6 @@
 <?php
 	//php 5 7 8
-	/**
+	/**/
 	$server[] = ['name' => '127.0.0.1 - PHP 7',		'url'=> 'http://127.0.0.1/symk/info.php'];
 	$server[] = ['name' => '127.0.0.2 - PHP 8',		'url'=> 'http://127.0.0.2/symk/info.php'];
 	//$server[] = ['name' => '127.0.0.3 - PHP 5',		'url'=> 'https://127.0.0.3/symk/info.php'];
