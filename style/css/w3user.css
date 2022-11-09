@@ -1,0 +1,148 @@
+canvas {position: absolute;width: 100%;height: 100%; z-index:-1 }
+.navbar {
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width:440px;
+	line-height:10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+table{
+  margin-top: 20px;
+}
+.symk-left
+{
+	width:440px;
+	padding:10px 5px 10px 10px !important;
+}
+.symk-right
+{
+	padding:0px !important;
+}
+.symk-right iframe
+{
+    width: 100%;
+    height: 100%;
+	margin:0;
+    border: 0;
+	overflow-x: scroll;	
+}
+.symk-left table 
+{
+	width:100%;
+	border:8px solid #2196F3;
+	border-radius:4px;
+	border-spacing:0;
+	text-align:left;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+	font-size: 82.5%;
+	opacity:0.8;
+}
+table th a
+{
+	color:yellow !important;
+	padding:5px 4px;
+	font-size:12px;
+}
+table th
+{
+	background-color:#2196F3;
+	border:none;
+	font-size: 82.5%;
+}
+
+table tr
+{
+	background-color:#2196F3;
+}
+
+table td
+{
+	background-color:white;
+	text-align:left;
+	padding:5px;
+}
+table th
+{
+	text-align:left;
+	padding:5px;
+}
+table tbody tr.odd td {
+    background-color:#F0F0F6;
+}
+table thead tr .headerSortDown, table thead tr .headerSortUp {
+    background-color: #e6EEEE;
+}
+table tbody tr:hover td {
+    background: #8dbdd8;
+}
+tr td:last-child, tr th:last-child
+{
+	display:none
+}
+tr:nth-child(2), tr:nth-last-child(1)
+{
+	display:none;
+}
+tr:nth-child(3) td:first-child
+{
+	border-radius: 3px 0 0 0;
+}
+tr:nth-child(3) td:nth-last-child(2)
+{
+	border-radius: 0 3px 0 0 ;
+}
+tr:nth-last-child(2) td:first-child
+{
+	border-radius: 0 0 0 3px  ;
+}
+tr:nth-last-child(2) td:nth-last-child(2)
+{
+	border-radius: 0 0 3px  0 ;
+}
+table th a
+{
+	color:black;
+	text-decoration:none;
+	font-weight:bold;
+}
+table td a
+{
+	color:black;
+	text-decoration:none;
+	font-weight:normal;
+	
+}
+table td
+{
+	border-bottom:1px solid #92a9d1;
+}
+table td:first-child , table th:first-child 
+{
+	padding:2;
+}
+table th:first-child img
+{
+	height:0px;
+}
+table td:first-child img
+{
+	height:22px;
+}
+hr{
+	border:none;
+}
