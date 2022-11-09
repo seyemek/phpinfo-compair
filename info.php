@@ -1,27 +1,4 @@
 <?php
-	//php 5.4
-	/**
-	$server[] = ['name' => '127.0.0.3',		'url'=> 'http://php5.dtsturkiye.com/symk/info.php'];
-	$server[] = ['name' => '94.102.76.43',	'url'=> 'http://product.dtsturkiye.com//symk/info.php'];
-	/**/
-	
-	//php 7.4 no ssl
-	/**
-	$server[] = ['name' => '10.180.64.157', 'url'=> 'http://dmctr.dtsturkiye.com/symk/info.php'];
-	$server[] = ['name' => '127.0.0.1',		'url'=> 'http://php7.dtsturkiye.com/symk/info.php'];
-	$server[] = ['name' => '94.102.76.44', 	'url'=> 'https://booking.dtsturkiye.com/symk/info.php'];
-	$server[] = ['name' => '88.248.2.178', 	'url'=> 'http://webdtstr.dtsturkiye.com/symk/info.php'];
-	/**/
-	
-	//php 7.4
-	/**/
-	$server[] = ['name' => '94.102.76.44', 	'url'=> 'https://94.102.76.44/symk/info.php'];
-	$server[] = ['name' => '88.248.2.178', 	'url'=> 'http://88.248.2.178/symk/info.php'];
-	$server[] = ['name' => '10.180.64.157', 	'url'=> 'https://10.180.64.157/symk/info.php'];
-	//$server[] = ['name' => '10.180.64.169', 	'url'=> 'https://10.180.64.169/symk/info.php'];
-	$server[] = ['name' => '127.0.0.1 - PHP 7',		'url'=> 'https://127.0.0.1/symk/info.php'];
-	/**/
-	
 	//php 5 7 8
 	/**
 	
