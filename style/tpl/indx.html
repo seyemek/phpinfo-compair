@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>iframe</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/lib/style/css/w3.css" />
+		<link rel="stylesheet" href="/lib/style/css/w3user.css" />
+		<script src="/lib/style/js/jquery.min.js"></script>
+		<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	</head>
+	<body>
+	<div class="w3-small symk all">
+			<div class="w3-bar w3-blue w3-text-yellow"><span class="w3-bar-item">Switch</a></div>
+			<div class="w3-bar">
+				<span class="w3-bar-item"><a href='//127.0.0.1:82/' id='php5' target='_parent'>PHP5</a></span>
+				<span class="w3-bar-item"><a href='//127.0.0.1:80/' id='php7' target='_parent'>PHP7</a></span>
+				<span class="w3-bar-item"><a href='//127.0.0.1:81/' id='php8' target='_parent'>PHP8</a></span>
+				<span class="w3-bar-item"><a href='/symk/info.php' id='Sed_php' target='_parent'>PHP info</a></span>
+			</div>
+		</div>
+		<div class="w3-small symk">
+			<div class="w3-bar w3-blue w3-text-yellow"><span class="w3-bar-item"><a href="?update=true">Server Information</a></span></div>
+			<div class="w3-bar">
+				<span class="w3-bar-item"><a href="https://httpd.apache.org/download.cgi">Apache:{apacheversion}</a></span>
+				<span class="w3-bar-item"><a href="https://www.php.net/downloads">PHP:{phpversion}</a></span>
+				<span class="w3-bar-item"><a href="https://mariadb.org/download">{mysqlver}</a></span>
+			</div>
+		</div>
+		<!-- BEGIN list -->
+		<div class="w3-small symk">
+			<div class="w3-bar w3-blue w3-text-yellow">
+				<span class="w3-bar-item" style="width:180px;"><a href="{list.url}" target="_parent">{list.ip}:{list.port}</a></span>
+				<span class="w3-bar-item" style="width:105px;">{list.apache} </span>
+				<span class="w3-bar-item" style="width:85px;"><a href="{list.url}/symk/info.php">PHP:{list.php}</a></span>
+				<span class="w3-bar-item">{list.mysql}</span>
+				<span class="w3-bar-item w3-right {list.offline}">{list.os} {list.oscheckdate}</span>
+			</div>
+			<div class="w3-bar w3-light-blue w3-text-black" style="font-weight: bold"> 
+				<!-- BEGIN lst -->
+				<button class="w3-bar-item w3-button tab" js-data="{list.lst.val}x">{list.lst.name} <span class="w3-badge w3-red">{list.lst.count}</span></button>
+				<!-- END lst -->
+				<span class="w3-bar-item w3-right">{list.date}</span>
+			</div>
+			<!-- BEGIN lst -->
+			<div class="tabs w3-white {list.lst.val}x w3-hide">{list.lst.itemx}<br /><br /></div>
+			<!-- END lst -->
+		</div>
+		<!-- END list -->
+		<div style="margin:10px; ">
+			<span class="w3-badge w3-black">&nbsp;&nbsp;</span> : Siyah Her Versiyonda var. 
+			<span class="w3-badge w3-bluesymk">&nbsp;&nbsp;</span> : Mavi Yazdıgı Versiyonda var. 
+			<span class="w3-badge w3-red">&nbsp;&nbsp;</span> : Kırmızı Yazdıgı Veriyonda yok. 
+		</div>
+		<script>
+			$('.tab').on('click', function()
+			{
+				$('button.tab').removeClass('w3-gray');
+				$('button[js-data='+$(this).attr('js-data')+']').addClass('w3-gray');
+				$('.tabs').addClass('w3-hide');
+				$('.' + $(this).attr('js-data') ).removeClass('w3-hide');
+			}).first().click();
+		</script>
+	</body>
+</html>
